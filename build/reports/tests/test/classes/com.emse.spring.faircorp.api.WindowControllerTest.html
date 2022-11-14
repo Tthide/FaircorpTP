@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.394s</div>
+<div class="counter">0.202s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,37 +79,37 @@
 </thead>
 <tr>
 <td class="success">shouldCreateWindow()</td>
-<td class="success">0.044s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldDeleteWindow()</td>
-<td class="success">0.007s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldLoadAWindow()</td>
-<td class="success">0.232s</td>
+<td class="success">0.148s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldLoadAWindowAndReturnNullIfNotFound()</td>
-<td class="success">0.008s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldLoadWindows()</td>
-<td class="success">0.016s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldSwitchWindow()</td>
-<td class="success">0.070s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldUpdateWindow()</td>
-<td class="success">0.017s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -117,21 +117,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:50:29.027 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:50:29.039 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:50:29.077 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.emse.spring.faircorp.api.WindowControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-14:50:29.088 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.emse.spring.faircorp.api.WindowControllerTest], using SpringBootContextLoader
-14:50:29.092 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.emse.spring.faircorp.api.WindowControllerTest]: class path resource [com/emse/spring/faircorp/api/WindowControllerTest-context.xml] does not exist
-14:50:29.092 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.emse.spring.faircorp.api.WindowControllerTest]: class path resource [com/emse/spring/faircorp/api/WindowControllerTestContext.groovy] does not exist
-14:50:29.092 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.emse.spring.faircorp.api.WindowControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:50:29.093 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.emse.spring.faircorp.api.WindowControllerTest]: WindowControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:50:29.160 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.emse.spring.faircorp.api.WindowControllerTest]
-14:50:29.232 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp\build\classes\java\main\com\emse\spring\faircorp\FaircorpApplication.class]
-14:50:29.233 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.emse.spring.faircorp.FaircorpApplication for test class com.emse.spring.faircorp.api.WindowControllerTest
-14:50:29.236 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.emse.spring.faircorp.api.WindowControllerTest]: using defaults.
-14:50:29.237 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-14:50:29.257 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5bf22f18, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@267f474e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a7471ce, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28276e50, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62e70ea3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3efe7086, org.springframework.test.context.transaction.TransactionalTestExecutionListener@675d8c96, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@741b3bc3, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2ed3b1f5, org.springframework.test.context.event.EventPublishingTestExecutionListener@63648ee9, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@68d6972f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@45be7cd5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7651218e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3185fa6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d366c9b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b58ed3c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@24faea88]
-14:50:29.261 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7e242b4d testClass = WindowControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@305f031 testClass = WindowControllerTest, locations = '{}', classes = '{class com.emse.spring.faircorp.FaircorpApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@35d08e6c, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1338fb5, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@b26d874a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@b1981ff, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@708400f6, [ImportsContextCustomizer@592e843a key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b5a12ae, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14dda234, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@b9abaf7a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>2022-11-14 17:08:54.631  INFO 28588 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.emse.spring.faircorp.api.WindowControllerTest], using SpringBootContextLoader
+2022-11-14 17:08:54.632  INFO 28588 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.emse.spring.faircorp.api.WindowControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-11-14 17:08:54.632  INFO 28588 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.emse.spring.faircorp.api.WindowControllerTest]: WindowControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-11-14 17:08:54.639  INFO 28588 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.emse.spring.faircorp.FaircorpApplication for test class com.emse.spring.faircorp.api.WindowControllerTest
+2022-11-14 17:08:54.640  INFO 28588 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-11-14 17:08:54.641  INFO 28588 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b0b20a8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d7135c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c2f4769, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62e7e3df, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8b814b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@397f3ff5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6f3d33bc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3299cc9f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6e44825e, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e8488f4, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2822ee4b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@54a332e4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1e3f0c5c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1476e447, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b991034, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@666033b1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@db9ecd]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -141,14 +132,14 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.3)
 
-2022-11-12 14:50:29.644  INFO 31416 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : Starting WindowControllerTest using Java 17.0.2 on PC-Thibault-BORDE with PID 31416 (started by Thibault in C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp)
-2022-11-12 14:50:29.645  INFO 31416 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-11-12 14:50:31.349  INFO 31416 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-11-12 14:50:31.910  INFO 31416 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a90fcaa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1805ec96, org.springframework.security.web.context.SecurityContextPersistenceFilter@20890a1a, org.springframework.security.web.header.HeaderWriterFilter@750e2d33, org.springframework.security.web.csrf.CsrfFilter@20faaf77, org.springframework.security.web.authentication.logout.LogoutFilter@1a5b7394, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3386ed8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@53b7bf01, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32ba5c65, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5432dca2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26101efc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e2109fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ad1be5d, org.springframework.security.web.session.SessionManagementFilter@214fba74, org.springframework.security.web.access.ExceptionTranslationFilter@401ec794, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e39f08c]
-2022-11-12 14:50:32.044  INFO 31416 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-11-12 14:50:32.045  INFO 31416 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-11-12 14:50:32.046  INFO 31416 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-11-12 14:50:32.098  INFO 31416 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : Started WindowControllerTest in 2.792 seconds (JVM running for 3.929)
+2022-11-14 17:08:54.668  INFO 28588 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : Starting WindowControllerTest using Java 17.0.2 on PC-Thibault-BORDE with PID 28588 (started by Thibault in C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp)
+2022-11-14 17:08:54.669  INFO 28588 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-11-14 17:08:55.122  INFO 28588 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-14 17:08:55.322  INFO 28588 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13ac7281, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7740028a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3744c760, org.springframework.security.web.header.HeaderWriterFilter@21e72fb2, org.springframework.security.web.csrf.CsrfFilter@470a2845, org.springframework.security.web.authentication.logout.LogoutFilter@5b628376, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e5337d8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1181a376, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@409a164d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ab40f46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cb4fc46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64b6d6dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a7eef27, org.springframework.security.web.session.SessionManagementFilter@219a9b16, org.springframework.security.web.access.ExceptionTranslationFilter@589c648, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2258ca14]
+2022-11-14 17:08:55.382  INFO 28588 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-11-14 17:08:55.382  INFO 28588 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-11-14 17:08:55.383  INFO 28588 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-11-14 17:08:55.402  INFO 28588 --- [    Test worker] c.e.s.faircorp.api.WindowControllerTest  : Started WindowControllerTest in 0.757 seconds (JVM running for 9.942)
 </pre>
 </span>
 </div>
@@ -160,7 +151,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5</a> at 12 nov. 2022, 14:50:32</p>
+<a href="http://www.gradle.org">Gradle 7.5</a> at 14 nov. 2022, 17:08:56</p>
 </div>
 </div>
 </body>

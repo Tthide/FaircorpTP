@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -30,6 +31,7 @@ class AdressSearchServiceTest {
     private MockRestServiceServer server;
 
     @Test
+    @WithMockUser(username = "admin", roles = "ADMIN")
     void shouldFindAdresses() throws JsonProcessingException {
         // Arrange
         ApiGouvResponseDto expectedResponse = simulateApiResponse();
