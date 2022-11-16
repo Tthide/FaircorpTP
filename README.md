@@ -2,9 +2,20 @@
 
 Implementation of the faircorp app described on the following tutorial : https://dev-mind.fr/formations.html
 
-Made with Java
-          Spring
-          Gradle
+Powered by:
+- Java
+- Spring
+- Gradle
+- JUnit
+- H2
+- Swagger
+
+#Compile
+
+./gradlew build
+                
+          
+# Online version
           
 Deployed on Clever Cloud :  faircorp-thibault-borde.cleverapps.io 
 
