@@ -1,12 +1,15 @@
 package com.emse.spring.faircorp.dao;
 
 import com.emse.spring.faircorp.model.Window;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.apache.logging.log4j.core.impl.Log4jContextFactory;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,9 +25,14 @@ class RoomDaoTest {
     @Autowired
     private RoomDao roomDao;
 
+    private static final Logger LOGGER = (Logger) LogManager.getLogger( RoomDaoTest.class );
+
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN")
     public void shouldFindAllWindowFromRoom() {
+
+
+
         List<Window> windows_actual = roomDao.FindAllWindowByRoomName("Room1");
         List<Long> windows_actual_id = new ArrayList<>();
         for (int i = 0; i < windows_actual.size(); i++) {

@@ -3,9 +3,13 @@ package com.emse.spring.faircorp.api;
 import com.emse.spring.faircorp.dao.RoomDao;
 import com.emse.spring.faircorp.dao.WindowDao;
 import com.emse.spring.faircorp.dto.WindowDto;
+import com.emse.spring.faircorp.logs.TestLog4J;
 import com.emse.spring.faircorp.model.Room;
 import com.emse.spring.faircorp.model.Window;
 import com.emse.spring.faircorp.model.WindowStatus;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +22,7 @@ import java.util.stream.Collectors;
 @Transactional // (3)
 @CrossOrigin
 public class WindowController {
+    private static final Logger LOGGER =  LogManager.getLogger( TestLog4J.class );
 
     private final WindowDao windowDao;
     private final RoomDao roomDao;
@@ -45,6 +50,8 @@ public class WindowController {
     public WindowDto switchStatus(@PathVariable Long id) {
         Window window = windowDao.findById(id).orElseThrow(IllegalArgumentException::new);
         window.setWindow_status(window.getWindow_status() == WindowStatus.OPEN ? WindowStatus.CLOSED : WindowStatus.OPEN);
+        LOGGER.log( Level.INFO, "Window # "+Long.toString(id)+" now " + window.getWindow_status().toString());
+
         return new WindowDto(window);
     }
 
@@ -68,5 +75,7 @@ public class WindowController {
     @Secured("ROLE_ADMIN") // (1)
     public void delete(@PathVariable Long id) {
         windowDao.deleteWindowById(id);
+        LOGGER.log( Level.INFO, "Window # "+Long.toString(id)+" deleted" );
+
     }
 }

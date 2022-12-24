@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8efece32-422b-441f-8bec-5979de62b532" name="Changes" comment="Last commit ( doesn't work because constructors are too linked)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/emse/spring/faircorp/FaircorpIntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/AdressSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/AdressSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/HeaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/HeaterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/WindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/emse/spring/faircorp/api/WindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/emse/spring/faircorp/FaircorpApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/emse/spring/faircorp/dao/RoomDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/emse/spring/faircorp/dao/RoomDaoTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="faircorp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="faircorp" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Thibault &lt;thibault.borde@etu.emse.fr&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EhvVVmTy2dAIqPp97LL2ZbSX6s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/franc/Desktop/cours/EMSE_2A/Majeur info/faircorp/faircorp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.emse.spring.faircorp.hello" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp\src" />
+      <recent name="C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp\src\main\java\com\emse\spring\faircorp\logs" />
+      <recent name="C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp" />
+      <recent name="C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp\build\clevercloud" />
+      <recent name="C:\Users\franc\Desktop\cours\EMSE_2A\Majeur info\faircorp\faircorp\src\main\java\com\emse\spring\faircorp\dao" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.emse.spring.faircorp.api" />
+      <recent name="com.emse.spring.faircorp.dao" />
+      <recent name="com.emse.spring.faircorp.hello" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.FaircorpIntegrationTests">
+    <configuration name="FaircorpApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.emse.spring.faircorp.FaircorpApplication" />
+      <module name="faircorp.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emse.spring.faircorp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog4J" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.emse.spring.faircorp.logs.TestLog4J" />
+      <module name="faircorp.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emse.spring.faircorp.logs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaircorpIntegrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.emse.spring.faircorp.FaircorpIntegrationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RoomDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.emse.spring.faircorp.dao.RoomDaoTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="faircorp [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.FaircorpIntegrationTests" />
+        <item itemvalue="Application.TestLog4J" />
+        <item itemvalue="Gradle.RoomDaoTest" />
+        <item itemvalue="Gradle.faircorp [build]" />
+        <item itemvalue="Application.FaircorpApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8efece32-422b-441f-8bec-5979de62b532" name="Changes" comment="" />
+      <created>1663060655277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663060655277</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1663083139507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663083139507</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test1.1">
+      <created>1663084301746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084301746</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test1.1">
+      <created>1663084352644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084352644</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test1.2">
+      <created>1663084531036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084531036</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test1.2">
+      <created>1663084759268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084759268</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test1.3">
+      <created>1663084769603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084769603</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test1.4">
+      <created>1663085050210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663085050210</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test1">
+      <created>1663087067651</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663087067651</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added AnotherConsoleGreetingService">
+      <created>1663087470572</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663087470572</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ConsoleGreetingService become primary">
+      <created>1663087601592</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663087601592</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Last commit ( doesn't work because constructors are too linked)">
+      <created>1663088509368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663088509368</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="acf9aa51-b4db-41fe-afc9-e2d0da7df28a">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="e526a436-18c0-461a-a338-b325e70ddcf4">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test2" />
+    <MESSAGE value="Initial" />
+    <MESSAGE value="Test1.1" />
+    <MESSAGE value="Test1.2" />
+    <MESSAGE value="Test1.3" />
+    <MESSAGE value="Test1.4" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test1" />
+    <MESSAGE value="added AnotherConsoleGreetingService" />
+    <MESSAGE value="ConsoleGreetingService become primary" />
+    <MESSAGE value="Last commit ( doesn't work because constructors are too linked)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last commit ( doesn't work because constructors are too linked)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="14" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

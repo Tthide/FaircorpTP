@@ -5,7 +5,11 @@ import com.emse.spring.faircorp.dao.HeaterDao;
 import com.emse.spring.faircorp.dao.RoomDao;
 import com.emse.spring.faircorp.dao.WindowDao;
 import com.emse.spring.faircorp.dto.RoomDto;
+import com.emse.spring.faircorp.logs.TestLog4J;
 import com.emse.spring.faircorp.model.*;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +22,7 @@ import java.util.stream.Collectors;
 @Transactional // (3)
 @CrossOrigin
 public class RoomController {
+    private static final Logger LOGGER =  LogManager.getLogger( TestLog4J.class );
     private final WindowDao windowDao;
     private final RoomDao roomDao;
     private final HeaterDao heaterDao;
@@ -66,6 +71,7 @@ public class RoomController {
     public void delete(@PathVariable Long id) {
         Room room = roomDao.getReferenceById(id);
         roomDao.deleteRoomById(id);
+        LOGGER.log( Level.INFO, "Heater # "+Long.toString(id)+" deleted" );
     }
 
 

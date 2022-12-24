@@ -3,8 +3,12 @@ package com.emse.spring.faircorp.api;
 import com.emse.spring.faircorp.dao.HeaterDao;
 import com.emse.spring.faircorp.dao.RoomDao;
 import com.emse.spring.faircorp.dto.HeaterDto;
+import com.emse.spring.faircorp.logs.TestLog4J;
 import com.emse.spring.faircorp.model.Heater;
 import com.emse.spring.faircorp.model.Room;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +21,8 @@ import java.util.stream.Collectors;
 @Transactional // (3)
 @CrossOrigin
 public class HeaterController {
+
+    private static final Logger LOGGER =  LogManager.getLogger( TestLog4J.class );
 
     private final HeaterDao heaterDao;
     private final RoomDao roomDao;
@@ -60,5 +66,6 @@ public class HeaterController {
     @Secured("ROLE_ADMIN") // (1)
     public void delete(@PathVariable Long id) {
         heaterDao.deleteById(id);
+        LOGGER.log( Level.INFO, "Heater # "+Long.toString(id)+" deleted" );
     }
 }

@@ -3,6 +3,10 @@ package com.emse.spring.faircorp.api;
 import com.emse.spring.faircorp.dto.ApiGouvAdressDto;
 import com.emse.spring.faircorp.dto.ApiGouvFeatureDto;
 import com.emse.spring.faircorp.dto.ApiGouvResponseDto;
+import com.emse.spring.faircorp.logs.TestLog4J;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.annotation.Secured;
@@ -25,6 +29,7 @@ import java.util.List;
 @Service
 public class AdressSearchService {
 
+    private static final Logger LOGGER =  LogManager.getLogger( TestLog4J.class );
 
     private RestTemplate restTemplate;
 
@@ -56,10 +61,15 @@ public class AdressSearchService {
                 .build().toUriString();
         uri = "https://api-adresse.data.gouv.fr" + uri;
 
+        LOGGER.log( Level.INFO, "Connecting to https://api-adresse.data.gouv.fr " );
+
         System.out.println(uri);
         restTemplate = restTemplate(new RestTemplateBuilder());
+
         ApiGouvResponseDto Response = restTemplate
                 .getForObject(uri, ApiGouvResponseDto.class);
+        LOGGER.log( Level.INFO, "Receiving Response from https://api-adresse.data.gouv.fr " );
+
         List<ApiGouvAdressDto> adresses = new ArrayList<ApiGouvAdressDto>();
         List<ApiGouvFeatureDto> apiGouvFeatureDto = Response.getFeatures();
 
