@@ -25,7 +25,7 @@ class RoomDaoTest {
     @Autowired
     private RoomDao roomDao;
 
-    private static final Logger LOGGER = (Logger) LogManager.getLogger( RoomDaoTest.class );
+
 
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN")

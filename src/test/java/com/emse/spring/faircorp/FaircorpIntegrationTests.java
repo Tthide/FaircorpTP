@@ -50,7 +50,7 @@ class FaircorpIntegrationTests {
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 		String body = response.body();
 		// For easy to see the output
-		System.out.println(body);
+		//System.out.println(body);
 		assertTrue(body.contains("label\":\"Cours Fauriel 42100 Saint-Étienne"));
 
 
