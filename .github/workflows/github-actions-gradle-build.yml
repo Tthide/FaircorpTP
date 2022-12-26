@@ -1,4 +1,7 @@
-name: Java CI
+name: "Gradle build and tests"
+
+# tests are launched when building the gradle project and it fails should one of the test fail
+
 
 on: [push]
 
