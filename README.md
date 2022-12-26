@@ -48,6 +48,7 @@ See https://adresse.data.gouv.fr/api-doc/adresse for documentation of the remote
 - Log4j2      (2.7.12)
 - Checkstyle  (7.8.1)
 - Spotbugs    (Latest)
+- Docker      (20.10.12)
 
 
 
@@ -57,6 +58,25 @@ See https://adresse.data.gouv.fr/api-doc/adresse for documentation of the remote
 ./gradlew bootRun
 ```                
     
+## Docker
+
+Run to build docker image:
+
+```Linux
+docker build --build-arg APP_PORT_TEMP=8090  --build-arg H2_USER_TEMP="az"  --build-arg H2_PASS_TEMP="pass"  --build-arg H2_PATH_TEMP="jdbc:h2:file:./data/demo" -t springio/gs-spring-boot-docker .
+```
+Here the server will host on port 8090, the H2 username will be “az”, the H2 password will be “pass” and the path of the file containing the database will be ./data/demo inside the container. Change either of those values as you want. <br>
+
+For the path you could choose to have an in-memory database by having H2_PATH_TEMP=” jdbc:h2:mem:faircorp;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE” <br>
+
+To launch the container :
+
+```Linux
+docker run -t --name FaircorpDocker -p 8090:8090  springio/gs-spring-boot-docker
+```
+
+REPLACE THE ARGUMENT OF THE -p OPTION BY THE PORT YOU WANT TO USE, IT MUST BE THE SAME USED AS AN ARGUMENT DURING BUILDING THE DOCKER IMAGE
+
 
 # API Documentation
 
@@ -88,7 +108,7 @@ See https://adresse.data.gouv.fr/api-doc/adresse for documentation of the remote
 
 ## Adress-search-service
 
--GET /api/address : find address corresponding to a name
+- GET /api/address : find address corresponding to a name
 
 
 # Contributing
