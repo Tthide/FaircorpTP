@@ -15,13 +15,15 @@ Link to swagger-ui of the api : faircorp-thibault-borde.cleverapps.io/swagger-ui
 
 Currently there are only 2 users.
 
-ADMIN which has the authorization to access the API.
-USER who doesn't have any particular authorization.
+ADMIN which has the authorization to access the API. <br>
+USER who doesn't have any particular authorization. <br>
 
-ADMIN username : admin
-      password : adminpass
-USER  username : user
-      password : myPassword   
+ADMIN username : admin <br>
+      password : adminpass <br>
+      
+      
+USER  username : user <br> 
+      password : myPassword   <br>
 
 ## Entities
 
