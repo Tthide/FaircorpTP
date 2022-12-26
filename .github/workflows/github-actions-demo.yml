@@ -1,19 +1,9 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
-
-name: CommitGradleTest
+name: Java CI
 
 on: [push]
 
 jobs:
-  test:
-    name: GradleTest
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,39 +13,9 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Grant Permissions to gradlew
-        run: chmod +x gradlew
-      - name: Test
-        run: ./gradlew test --tests "*"
-
-      - name: Test Success
-        if: success()
-        uses: actions/github-script@0.2.0
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
-          github-token: ${{ github.token }}
-          script: |
-            const pull_number = "${{github.event.number}}"
-            await github.pulls.createReview({
-              ...context.repo,
-              pull_number,
-              body: "All tests passed.",
-              event: "APPROVE"
-            })
-      - name: Test Fail
-        if: failure()
-        uses: actions/github-script@0.2.0
-        with:
-          github-token: ${{ github.token }}
-          script: |
-            const pull_number = "${{github.event.number}}"
-            await github.pulls.createReview({
-              ...context.repo,
-              pull_number,
-              body: "There is something wrong with test codes.",
-             event: "REQUEST_CHANGES"
-            })
-            await github.pulls.update({
-              ...context.repo,
-              pull_number,
-              state: "closed"
-            })
+          arguments: build
